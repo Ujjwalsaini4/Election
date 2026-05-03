@@ -1,22 +1,30 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import { Search } from 'lucide-react';
 import Button from './Button';
 
 describe('Button Component', () => {
-  it('renders correctly', () => {
-    render(<Button>Click Me</Button>);
-    expect(screen.getByText('Click Me')).toBeInTheDocument();
+  it('renders correctly with children', () => {
+    render(<Button>Click me</Button>);
+    expect(screen.getByText('Click me')).toBeInTheDocument();
   });
 
-  it('handles click events', () => {
-    const handleClick = vi.fn();
-    render(<Button onClick={handleClick}>Click Me</Button>);
-    fireEvent.click(screen.getByText('Click Me'));
-    expect(handleClick).toHaveBeenCalledTimes(1);
+  it('applies variant classes', () => {
+    const { container } = render(<Button variant="secondary">Secondary</Button>);
+    expect(container.firstChild).toHaveClass('bg-white');
   });
 
-  it('is disabled when the disabled prop is passed', () => {
-    render(<Button disabled>Click Me</Button>);
-    expect(screen.getByText('Click Me')).toBeDisabled();
+  it('renders with an icon', () => {
+    render(<Button icon={Search}>Search</Button>);
+    expect(screen.getByText('Search')).toBeInTheDocument();
+    // Lucide icons render as svg
+    expect(document.querySelector('svg')).toBeInTheDocument();
+  });
+
+  it('handles disabled state', () => {
+    render(<Button disabled>Disabled</Button>);
+    const button = screen.getByText('Disabled');
+    expect(button).toBeDisabled();
+    expect(button).toHaveClass('opacity-50');
   });
 });

@@ -5,41 +5,400 @@
 
 [1m[30m[46m RUN [49m[39m[22m [36mv4.1.5 [39m[90mC:/Users/ujjwa/OneDrive/Desktop/voting2k26[39m
 
- [32m✓[39m src/components/ui/Button.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 129[2mms[22m[39m
- [32m✓[39m src/components/layout/Navbar.test.jsx [2m([22m[2m1 test[22m[2m)[22m[32m 127[2mms[22m[39m
- [32m✓[39m src/pages/Timeline.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 236[2mms[22m[39m
- [32m✓[39m src/pages/Home.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 235[2mms[22m[39m
- [32m✓[39m src/pages/Guide.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 222[2mms[22m[39m
- [31m❯[39m src/pages/Assistant.test.jsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 1458[2mms[22m[39m
-[31m     [31m×[31m renders initial bot greeting[39m[32m 131[2mms[22m[39m
-     [33m[2m✓[22m[39m allows user to send a message and receives a reply [33m 1321[2mms[22m[39m
+ [31m❯[39m src/components/layout/Footer.test.jsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 140[2mms[22m[39m
+[31m     [31m×[31m renders the footer content[39m[32m 120[2mms[22m[39m
+     [32m✓[39m renders copyright with current year[32m 14[2mms[22m[39m
+ [32m✓[39m src/components/ui/ErrorBoundary.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 157[2mms[22m[39m
+ [32m✓[39m src/pages/Guide.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 199[2mms[22m[39m
+ [32m✓[39m src/pages/Timeline.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 238[2mms[22m[39m
+ [32m✓[39m src/pages/Home.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 225[2mms[22m[39m
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ [31m❯[39m src/pages/Assistant.test.jsx [2m([22m[2m8 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 718[2mms[22m[39m
+     [32m✓[39m renders initial bot greeting[32m 155[2mms[22m[39m
+     [32m✓[39m handles empty input gracefully[32m 272[2mms[22m[39m
+     [32m✓[39m responds correctly to id proof query[32m 70[2mms[22m[39m
+     [32m✓[39m responds correctly to registration status query[32m 41[2mms[22m[39m
+     [32m✓[39m responds correctly to evm machine query[32m 40[2mms[22m[39m
+[31m     [31m×[31m responds correctly to online process query[39m[32m 55[2mms[22m[39m
+     [32m✓[39m responds correctly to greeting query[32m 45[2mms[22m[39m
+     [32m✓[39m responds correctly to fallback query[32m 33[2mms[22m[39m
+ [32m✓[39m src/components/layout/Navbar.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[33m 753[2mms[22m[39m
+     [33m[2m✓[22m[39m toggles the mobile menu when clicking the menu button [33m 637[2mms[22m[39m
+ [32m✓[39m src/components/ui/Button.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 58[2mms[22m[39m
 
-[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 2 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
 
-[41m[1m FAIL [22m[49m src/pages/Assistant.test.jsx[2m > [22mAssistant Component[2m > [22mrenders initial bot greeting
-[31m[1mTypeError[22m: messagesEndRef.current?.scrollIntoView is not a function[39m
-[36m [2m❯[22m scrollToBottom src/pages/Assistant.jsx:[2m21:29[22m[39m
-    [90m 19|[39m
-    [90m 20|[39m   [35mconst[39m scrollToBottom [33m=[39m () [33m=>[39m {
-    [90m 21|[39m     messagesEndRef[33m.[39mcurrent[33m?.[39m[34mscrollIntoView[39m({ behavior[33m:[39m [32m"smooth"[39m })[33m;[39m
-    [90m   |[39m                             [31m^[39m
-    [90m 22|[39m   }[33m;[39m
-    [90m 23|[39m
-[90m [2m❯[22m src/pages/Assistant.jsx:[2m25:5[22m[39m
-[90m [2m❯[22m Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:[2m25989:20[22m[39m
-[90m [2m❯[22m runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:[2m874:13[22m[39m
-[90m [2m❯[22m commitHookEffectListMount node_modules/react-dom/cjs/react-dom-client.development.js:[2m13249:29[22m[39m
-[90m [2m❯[22m commitHookPassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m13336:11[22m[39m
-[90m [2m❯[22m commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:[2m15484:13[22m[39m
-[90m [2m❯[22m recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m15439:11[22m[39m
-[90m [2m❯[22m commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:[2m15519:11[22m[39m
-[90m [2m❯[22m flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m18432:9[22m[39m
+[41m[1m FAIL [22m[49m src/pages/Assistant.test.jsx[2m > [22mAssistant Component[2m > [22mresponds correctly to online process query
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: /apply for a voter ID online/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"max-w-4xl mx-auto w-full h-[calc(100vh-12rem)] flex flex-col"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"text-center mb-6"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"text-3xl font-bold text-slate-900 dark:text-white mb-2"[39m
+        [36m>[39m
+          [0mSmart Assistant[0m
+        [36m</h1>[39m
+        [36m<p[39m
+          [33mclass[39m=[32m"text-slate-600 dark:text-slate-400"[39m
+        [36m>[39m
+          [0mAsk questions and get instant answers about the election.[0m
+        [36m</p>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden  flex-1 flex flex-col bg-slate-50 dark:bg-slate-900 overflow-hidden shadow-lg border-slate-200 dark:border-slate-800"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mclass[39m=[32m"flex-1 overflow-y-auto p-4 md:p-6 space-y-6"[39m
+          [33mrole[39m=[32m"log"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex gap-4 "[39m
+            [33mstyle[39m=[32m"opacity: 1; transform: none;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33maria-label[39m=[32m"Assistant"[39m
+              [33mclass[39m=[32m"w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-bot w-5 h-5"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M12 8V4H8"[39m
+                [36m/>[39m
+                [36m<rect[39m
+                  [33mheight[39m=[32m"12"[39m
+                  [33mrx[39m=[32m"2"[39m
+                  [33mwidth[39m=[32m"16"[39m
+                  [33mx[39m=[32m"4"[39m
+                  [33my[39m=[32m"8"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M2 14h2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M20 14h2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M15 13v2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M9 13v2"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"max-w-[80%] rounded-2xl px-5 py-3 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 shadow-md border border-slate-100 dark:border-slate-700 rounded-tl-sm"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"whitespace-pre-wrap leading-relaxed"[39m
+              [36m>[39m
+                [0mHello! I'm your Election Guide Assistant. How can I help you today? You can ask me about registration, ID proofs, or the voting process.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex gap-4 flex-row-reverse"[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(10px);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33maria-label[39m=[32m"You"[39m
+              [33mclass[39m=[32m"w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm bg-primary text-white"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-user w-5 h-5"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"[39m
+                [36m/>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"12"[39m
+                  [33mcy[39m=[32m"7"[39m
+                  [33mr[39m=[32m"4"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"max-w-[80%] rounded-2xl px-5 py-3 bg-primary text-white rounded-tr-sm shadow-md"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"whitespace-pre-wrap leading-relaxed"[39m
+              [36m>[39m
+                [0monline process[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex gap-4 "[39m
+            [33mstyle[39m=[32m"opacity: 0; transform: translateY(10px);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33maria-label[39m=[32m"Assistant"[39m
+              [33mclass[39m=[32m"w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-bot w-5 h-5"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M12 8V4H8"[39m
+                [36m/>[39m
+                [36m<rect[39m
+                  [33mheight[39m=[32m"12"[39m
+                  [33mrx[39m=[32m"2"[39m
+                  [33mwidth[39m=[32m"16"[39m
+                  [33mx[39m=[32m"4"[39m
+                  [33my[39m=[32m"8"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M2 14h2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M20 14h2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M15 13v2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M9 13v2"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"max-w-[80%] rounded-2xl px-5 py-3 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 shadow-md border border-slate-100 dark:border-slate-700 rounded-tl-sm"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"whitespace-pre-wrap leading-relaxed"[39m
+              [36m>[39m
+                [0mNo, currently the voting process requires physical presence at your designated polling station to ensure security and anonymity.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div />[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"p-4 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"flex gap-3"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33maria-label[39m=[32m"Ask the assistant a question"[39m
+              [33mclass[39m=[32m"flex-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary dark:text-white transition-all shadow-inner"[39m
+              [33mplaceholder[39m=[32m"Ask a question..."[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m""[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33maria-label[39m=[32m"Send message"[39m
+              [33mclass[39m=[32m"bg-primary hover:bg-blue-700 text-white rounded-xl px-5 py-3 transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus-ring flex items-center justify-center shadow-md hover:shadow-lg"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-send w-5 h-5"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"m21.854 2.147-10.94 10.939"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</button>[39m
+          [36m</form>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/pages/Assistant.test.jsx:[2m54:21[22m[39m
+    [90m 52|[39m       })[33m;[39m
+    [90m 53|[39m
+    [90m 54|[39m       [34mexpect[39m(screen[33m.[39m[34mgetByText[39m(testCase[33m.[39ma))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m   |[39m                     [31m^[39m
+    [90m 55|[39m     })[33m;[39m
+    [90m 56|[39m   })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m src/components/layout/Footer.test.jsx[2m > [22mFooter Component[2m > [22mrenders the footer content
+[31m[1mTestingLibraryElementError[22m: Found multiple elements with the text: /ElectionGuide/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<span[31m
+  [33mclass[31m=[32m"font-semibold text-slate-900 dark:text-white"[31m
+[36m>[31m
+  [0mElectionGuide[0m
+[36m</span>[31m
+
+Ignored nodes: comments, script, style
+[36m<p[31m
+  [33mclass[31m=[32m"mt-1"[31m
+[36m>[31m
+  [0m© [0m
+  [0m2026[0m
+  [0m ElectionGuide. All rights reserved.[0m
+[36m</p>[31m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<footer[31m
+      [33mclass[31m=[32m"bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"flex flex-col md:flex-row items-center justify-between gap-4"[31m
+        [36m>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"flex items-center gap-2"[31m
+          [36m>[31m
+            [36m<svg[31m
+              [33maria-hidden[31m=[32m"true"[31m
+              [33mclass[31m=[32m"lucide lucide-vote w-5 h-5 text-primary"[31m
+              [33mfill[31m=[32m"none"[31m
+              [33mheight[31m=[32m"24"[31m
+              [33mstroke[31m=[32m"currentColor"[31m
+              [33mstroke-linecap[31m=[32m"round"[31m
+              [33mstroke-linejoin[31m=[32m"round"[31m
+              [33mstroke-width[31m=[32m"2"[31m
+              [33mviewBox[31m=[32m"0 0 24 24"[31m
+              [33mwidth[31m=[32m"24"[31m
+              [33mxmlns[31m=[32m"http://www.w3.org/2000/svg"[31m
+            [36m>[31m
+              [36m<path[31m
+                [33md[31m=[32m"m9 12 2 2 4-4"[31m
+              [36m/>[31m
+              [36m<path[31m
+                [33md[31m=[32m"M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"[31m
+              [36m/>[31m
+              [36m<path[31m
+                [33md[31m=[32m"M22 19H2"[31m
+              [36m/>[31m
+            [36m</svg>[31m
+            [36m<span[31m
+              [33mclass[31m=[32m"font-semibold text-slate-900 dark:text-white"[31m
+            [36m>[31m
+              [0mElectionGuide[0m
+            [36m</span>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"text-sm text-slate-500 dark:text-slate-400 text-center md:text-left"[31m
+          [36m>[31m
+            [36m<p>[31m
+              [0mEmpowering voters with accessible information.[0m
+            [36m</p>[31m
+            [36m<p[31m
+              [33mclass[31m=[32m"mt-1"[31m
+            [36m>[31m
+              [0m© [0m
+              [0m2026[0m
+              [0m ElectionGuide. All rights reserved.[0m
+            [36m</p>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"flex gap-4 text-sm font-medium text-slate-600 dark:text-slate-300"[31m
+          [36m>[31m
+            [36m<a[31m
+              [33mclass[31m=[32m"hover:text-primary transition-colors focus-ring rounded"[31m
+              [33mhref[31m=[32m"#"[31m
+            [36m>[31m
+              [0mPrivacy[0m
+            [36m</a>[31m
+            [36m<a[31m
+              [33mclass[31m=[32m"hover:text-primary transition-colors focus-ring rounded"[31m
+              [33mhref[31m=[32m"#"[31m
+            [36m>[31m
+              [0mTerms[0m
+            [36m</a>[31m
+            [36m<a[31m
+              [33mclass[31m=[32m"hover:text-primary transition-colors focus-ring rounded"[31m
+              [33mhref[31m=[32m"#"[31m
+            [36m>[31m
+              [0mContact[0m
+            [36m</a>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</div>[31m
+    [36m</footer>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[90m [2m❯[22m Object.getElementError node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m getElementError node_modules/@testing-library/dom/dist/query-helpers.js:[2m20:35[22m[39m
+[90m [2m❯[22m getMultipleElementsFoundError node_modules/@testing-library/dom/dist/query-helpers.js:[2m23:10[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m55:13[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/components/layout/Footer.test.jsx:[2m14:19[22m[39m
+    [90m 12|[39m     )[33m;[39m
+    [90m 13|[39m
+    [90m 14|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([36m/ElectionGuide/i[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m   |[39m                   [31m^[39m
+    [90m 15|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([36m/Interactive Guide/i[39m))[33m.[39m[34mtoBeInTheDocument[39m()[33m;[39m
+    [90m 16|[39m     expect(screen.getByText(/Official Resources/i)).toBeInTheDocument(…
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
 
 
-[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
-[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m11 passed[39m[22m[90m (12)[39m
-[2m   Start at [22m 12:32:26
-[2m   Duration [22m 7.26s[2m (transform 671ms, setup 2.12s, import 8.01s, tests 2.41s, environment 20.80s)[22m
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[90m (8)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m22 passed[39m[22m[90m (24)[39m
+[2m   Start at [22m 13:12:10
+[2m   Duration [22m 6.54s[2m (transform 808ms, setup 1.45s, import 8.95s, tests 2.49s, environment 19.36s)[22m
 
