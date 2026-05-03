@@ -1,0 +1,45 @@
+
+> voting2k26@0.0.0 test
+> vitest --run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.5 [39m[90mC:/Users/ujjwa/OneDrive/Desktop/voting2k26[39m
+
+ [32m✓[39m src/components/ui/Button.test.jsx [2m([22m[2m3 tests[22m[2m)[22m[32m 129[2mms[22m[39m
+ [32m✓[39m src/components/layout/Navbar.test.jsx [2m([22m[2m1 test[22m[2m)[22m[32m 127[2mms[22m[39m
+ [32m✓[39m src/pages/Timeline.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 236[2mms[22m[39m
+ [32m✓[39m src/pages/Home.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 235[2mms[22m[39m
+ [32m✓[39m src/pages/Guide.test.jsx [2m([22m[2m2 tests[22m[2m)[22m[32m 222[2mms[22m[39m
+ [31m❯[39m src/pages/Assistant.test.jsx [2m([22m[2m2 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 1458[2mms[22m[39m
+[31m     [31m×[31m renders initial bot greeting[39m[32m 131[2mms[22m[39m
+     [33m[2m✓[22m[39m allows user to send a message and receives a reply [33m 1321[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/pages/Assistant.test.jsx[2m > [22mAssistant Component[2m > [22mrenders initial bot greeting
+[31m[1mTypeError[22m: messagesEndRef.current?.scrollIntoView is not a function[39m
+[36m [2m❯[22m scrollToBottom src/pages/Assistant.jsx:[2m21:29[22m[39m
+    [90m 19|[39m
+    [90m 20|[39m   [35mconst[39m scrollToBottom [33m=[39m () [33m=>[39m {
+    [90m 21|[39m     messagesEndRef[33m.[39mcurrent[33m?.[39m[34mscrollIntoView[39m({ behavior[33m:[39m [32m"smooth"[39m })[33m;[39m
+    [90m   |[39m                             [31m^[39m
+    [90m 22|[39m   }[33m;[39m
+    [90m 23|[39m
+[90m [2m❯[22m src/pages/Assistant.jsx:[2m25:5[22m[39m
+[90m [2m❯[22m Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:[2m25989:20[22m[39m
+[90m [2m❯[22m runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:[2m874:13[22m[39m
+[90m [2m❯[22m commitHookEffectListMount node_modules/react-dom/cjs/react-dom-client.development.js:[2m13249:29[22m[39m
+[90m [2m❯[22m commitHookPassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m13336:11[22m[39m
+[90m [2m❯[22m commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:[2m15484:13[22m[39m
+[90m [2m❯[22m recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m15439:11[22m[39m
+[90m [2m❯[22m commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:[2m15519:11[22m[39m
+[90m [2m❯[22m flushPassiveEffects node_modules/react-dom/cjs/react-dom-client.development.js:[2m18432:9[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m11 passed[39m[22m[90m (12)[39m
+[2m   Start at [22m 12:32:26
+[2m   Duration [22m 7.26s[2m (transform 671ms, setup 2.12s, import 8.01s, tests 2.41s, environment 20.80s)[22m
+
